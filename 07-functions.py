@@ -22,7 +22,39 @@ hello_friends(name6)
 hello_friends(name7)
 hello_friends(name8)
 
+#
+# def this_video(movie):
+#     print("이거 봤어?, {}".format(movie))
+#
+# movie1 = "혹성탈출"
+# movie2 = "청년경찰"
+# movie3 = "군함도"
+# movie4 = "에나벨"
+#
+# this_video(movie1)
+# this_video(movie2)
+# this_video(movie3)
+# this_video(movie4)
 
+# 입력값 o, 반환값 o
+def sum(a, b):
+    return a + b
+
+# 입력값 o, 반환값 x
+def hello_friends(name):
+    print("hello, {}".format(name))
+
+# 입력값 x, 반환값 o
+def return_1():
+    return 1
+
+# 입력값 x, 반환값 x
+def hello_world():
+    print("hello world")
+
+# return 은 변수에 담아서 사용할 수 있다.
+num_1 = return_1()
+print(num_1)
 
 # print("hi, {}".format(name1))
 # print("hi, {}".format(name2))
