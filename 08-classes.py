@@ -49,6 +49,21 @@ article1 = Article("개발", "개발은 쉬워요")
 article2 = Article("코칭", "코칭은 쉬워요")
 article3 = Article("창업", "창업은 쉬워요")
 
-print(article1.view_count)
-article1.read()
-print(article1.view_count)
+# print(article1.view_count)
+# article1.read()
+# print(article1.view_count)
+
+#### Ariticle class inheritance 상속
+# 클래스도 부모 클래스로부터 자식 클래스가 물려받을 수 있다.
+class BrunchArticle(Article):
+    source = "브런치"
+
+    def read(self):
+        self.view_count = self.view_count + 2
+
+brunch_article = BrunchArticle("개발", "개발은 쉬워요")
+print(brunch_article.title)
+print(brunch_article.source)
+print(brunch_article.view_count)
+brunch_article.read()
+print(brunch_article.view_count)
