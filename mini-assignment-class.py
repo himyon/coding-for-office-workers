@@ -1,9 +1,9 @@
 # 학교 클래스
 
 class School:
-    name = "성보중학교"
-    year = "1999년"
-    adress = "서울시_관악구_신림동"
+    # name = "성보중학교"
+    # year = "1999년"
+    # adress = "서울시_관악구_신림동"
 
     def __init__(self, name, year, adress):
         self.name = name
