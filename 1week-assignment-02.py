@@ -10,22 +10,18 @@
 # (고급) 사람 클래스에서 새로운 사람을 만들 때 입력은 그대로 유지하면서,
 # 직급도 처음 만들어질 때 입력하도록 변경을 도전해봅시다.
 
-# class Human:
-#     name = "홍성광"
-#     age = "32"
-#     sex = "남자"
-#
-# human1 = Human()
-# print(human1.name)
-
 class Human:
-    name = "홍성광"
-    age = "32"
-    sex = "남자"
 
     def __init__(self, name, age, sex):
         self.name = name
         self.age = age
         self.sex = sex
 
-Human1 = human("")
+Human1 = Human("홍성광", "20", "남성")
+
+
+class BrunchHuman(Human):
+    source = "브런치"
+
+brunch_human = BrunchHuman("홍성광", "20", "남성")
+print(brunch_human.name)
