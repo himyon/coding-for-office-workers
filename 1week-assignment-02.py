@@ -12,16 +12,20 @@
 
 class Human:
 
-    def __init__(self, name, age, sex):
+    def __init__(self, name, age, sex,):
         self.name = name
         self.age = age
         self.sex = sex
 
-Human1 = Human("홍성광", "20", "남성")
+Human1 = Human("홍길동", "20", "남성")
+Human2 = Human("김말숙", "20", "여성")
 
+print(Human1.name)
+print(Human1.age)
+print(Human1.sex)
 
-class BrunchHuman(Human):
-    source = "브런치"
+class worker(Human):
+    positon = "대리"
 
-brunch_human = BrunchHuman("홍성광", "20", "남성")
-print(brunch_human.name)
+worker_human = worker("김개똥", "20", "남성")
+print(worker_human.positon)
